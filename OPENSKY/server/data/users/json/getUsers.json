@@ -1,0 +1,12 @@
+{
+  "data":{
+    "users":[
+      {
+        "id":1,
+        "username":"FlightsUser",
+        "email":"filghtsuser@gmail.com",
+        "password":"Hamoye@12"
+      }
+    ]
+  }
+}
