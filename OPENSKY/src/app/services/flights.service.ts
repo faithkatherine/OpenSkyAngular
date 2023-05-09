@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class FlightsService {
-  private airportsUrl = 'assets/output.json'
+  private airportsUrl = 'assets/large_airports.json'
   constructor(private httpClient:HttpClient) { }
 
   getAirports(){

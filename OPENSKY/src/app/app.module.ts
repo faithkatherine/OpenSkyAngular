@@ -4,22 +4,24 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { NgxMatDatetimePickerModule, NgxMatTimepickerModule } from '@angular-material-components/datetime-picker';
 
 import { SigninComponent } from './signin/signin.component';
 import { FlightsComponent } from './flights/flights.component';
-import { HeaderComponent } from './components/header/header.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     SigninComponent,
     FlightsComponent,
-    HeaderComponent
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    NgxMatDatetimePickerModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
