@@ -24,7 +24,7 @@ export class FlightsComponent {
     });
   }
 
-  getOpenSky(){
+  submitForm(){
 
   }
 }

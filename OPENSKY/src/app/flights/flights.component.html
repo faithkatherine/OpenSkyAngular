@@ -1,13 +1,28 @@
-<div class="row">
-  <div class="col">
-    <select>
-      <option (click)="getOpenSky()" *ngFor="let airport of airPortsData"  [value]=airport.name>{{airport.name}}</option>
-    </select>
+<form (submit)="submitForm()">
+  <div class="row">
+    <div class="col-4">
+      <h4>Pick an airport</h4>
+      <select name="airport">
+        <option *ngFor="let airport of airPortsData" [value]="airport.name">{{airport.name}}</option>
+      </select>
+    </div>
+    <div class="col-3">
+      <h4>Enter Date and Start Time</h4>
+      <input type="datetime-local" name="startTime">
+    </div>
+    <div class="col-3">
+      <h4>Enter Date and end Time</h4>
+      <input type="datetime-local" name="endTime">
+    </div>
+    <div class="col-2">
+      <button type="submit">Submit</button>
+    </div>
   </div>
-  <div class="col">
-    <input type="datetime-local" name="time">
-  </div>
-</div>
+</form>
 
+
+<div>
+  <p>DFW | 15:00 PM CST | 50 | 32</p>
+</div>
 
 
